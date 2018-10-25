@@ -13,6 +13,15 @@
 		799D7D5A217F15F500CCF700 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D7D59217F15F500CCF700 /* MessagesViewController.swift */; };
 		799D7D5D217F15F500CCF700 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799D7D5B217F15F500CCF700 /* MainInterface.storyboard */; };
 		799D7D5F217F15F600CCF700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799D7D5E217F15F600CCF700 /* Assets.xcassets */; };
+		799D7D6B217F268800CCF700 /* VoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D7D6A217F268800CCF700 /* VoteData.swift */; };
+		79B20B8421800AA80025677D /* ConfittiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B20B8321800AA80025677D /* ConfittiView.swift */; };
+		79B20B8621800CAC0025677D /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B20B8521800CAC0025677D /* confetti.png */; };
+		79B20B8A21800CEE0025677D /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B20B8721800CEE0025677D /* diamond.png */; };
+		79B20B8B21800CEE0025677D /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B20B8821800CEE0025677D /* triangle.png */; };
+		79B20B8C21800CEE0025677D /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B20B8921800CEE0025677D /* star.png */; };
+		79B20B8F21803C030025677D /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B20B8E21803C030025677D /* VoteViewController.swift */; };
+		79B20B912180455B0025677D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B20B902180455B0025677D /* DataManager.swift */; };
+		79B20B9321804CF20025677D /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B20B9221804CF20025677D /* MenuCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		799D7D5C217F15F500CCF700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		799D7D5E217F15F600CCF700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799D7D60217F15F600CCF700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799D7D6A217F268800CCF700 /* VoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteData.swift; sourceTree = "<group>"; };
+		79B20B8321800AA80025677D /* ConfittiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfittiView.swift; sourceTree = "<group>"; };
+		79B20B8521800CAC0025677D /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
+		79B20B8721800CEE0025677D /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
+		79B20B8821800CEE0025677D /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		79B20B8921800CEE0025677D /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		79B20B8E21803C030025677D /* VoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		79B20B902180455B0025677D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		79B20B9221804CF20025677D /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +120,37 @@
 		799D7D58217F15F500CCF700 /* DrinkVote MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				79B20B8321800AA80025677D /* ConfittiView.swift */,
+				799D7D6C217F268F00CCF700 /* Data */,
 				799D7D59217F15F500CCF700 /* MessagesViewController.swift */,
+				79B20B8E21803C030025677D /* VoteViewController.swift */,
+				79B20B9221804CF20025677D /* MenuCollectionViewController.swift */,
 				799D7D5B217F15F500CCF700 /* MainInterface.storyboard */,
-				799D7D5E217F15F600CCF700 /* Assets.xcassets */,
-				799D7D60217F15F600CCF700 /* Info.plist */,
+				79B20B8D21800CFD0025677D /* Resource */,
 			);
 			path = "DrinkVote MessagesExtension";
+			sourceTree = "<group>";
+		};
+		799D7D6C217F268F00CCF700 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				799D7D6A217F268800CCF700 /* VoteData.swift */,
+				79B20B902180455B0025677D /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		79B20B8D21800CFD0025677D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				799D7D60217F15F600CCF700 /* Info.plist */,
+				799D7D5E217F15F600CCF700 /* Assets.xcassets */,
+				79B20B8521800CAC0025677D /* confetti.png */,
+				79B20B8721800CEE0025677D /* diamond.png */,
+				79B20B8921800CEE0025677D /* star.png */,
+				79B20B8821800CEE0025677D /* triangle.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				799D7D5F217F15F600CCF700 /* Assets.xcassets in Resources */,
+				79B20B8B21800CEE0025677D /* triangle.png in Resources */,
 				799D7D5D217F15F500CCF700 /* MainInterface.storyboard in Resources */,
+				79B20B8A21800CEE0025677D /* diamond.png in Resources */,
+				79B20B8621800CAC0025677D /* confetti.png in Resources */,
+				79B20B8C21800CEE0025677D /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B20B8F21803C030025677D /* VoteViewController.swift in Sources */,
+				79B20B912180455B0025677D /* DataManager.swift in Sources */,
 				799D7D5A217F15F500CCF700 /* MessagesViewController.swift in Sources */,
+				79B20B9321804CF20025677D /* MenuCollectionViewController.swift in Sources */,
+				799D7D6B217F268800CCF700 /* VoteData.swift in Sources */,
+				79B20B8421800AA80025677D /* ConfittiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,18 +407,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 75M24V2QJ2;
 				INFOPLIST_FILE = "DrinkVote MessagesExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quocnb.DrinkVote.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sothink.clothesmaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 20180412_ClothesMaker_Inhouse;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -374,18 +430,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 75M24V2QJ2;
 				INFOPLIST_FILE = "DrinkVote MessagesExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quocnb.DrinkVote.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sothink.clothesmaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 20180412_ClothesMaker_Inhouse;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -394,10 +454,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 75M24V2QJ2;
 				INFOPLIST_FILE = DrinkVote/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quocnb.DrinkVote;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sothink.clothesmaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 20180412_ClothesMaker_Inhouse;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,10 +472,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 75M24V2QJ2;
 				INFOPLIST_FILE = DrinkVote/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quocnb.DrinkVote;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sothink.clothesmaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 20180412_ClothesMaker_Inhouse;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
