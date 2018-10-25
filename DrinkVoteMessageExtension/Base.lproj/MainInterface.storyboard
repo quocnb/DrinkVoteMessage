@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="DrinkVoteMessageExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="131"/>
+        </scene>
+        <!--Vote View Controller-->
+        <scene sceneID="CPg-ee-Ehn">
+            <objects>
+                <viewController storyboardIdentifier="VoteViewController" id="HWw-9X-Wj4" customClass="VoteViewController" customModule="DrinkVoteMessageExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Yy-mF-tSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ol-sf-cDn" customClass="SAConfettiView" customModule="DrinkVoteMessageExtension" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cie-kg-Fs2">
+                                <rect key="frame" x="20" y="420" width="280" height="80"/>
+                                <color key="backgroundColor" red="0.33137297960000001" green="0.62450431849999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="YNf-Gj-HUn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didSelectDrinkButton:" destination="HWw-9X-Wj4" eventType="touchUpInside" id="7bp-Cq-Cwj"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="njk-rO-orD">
+                                <rect key="frame" x="30" y="40" width="260" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dY7-cz-5WL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFz-W3-6zx">
+                                <rect key="frame" x="30" y="110" width="260" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="s4b-6t-xIk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer" translatesAutoresizingMaskIntoConstraints="NO" id="M8R-dG-tGc">
+                                <rect key="frame" x="60" y="190" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M8R-dG-tGc" secondAttribute="height" id="CGx-L4-uHR"/>
+                                    <constraint firstAttribute="width" constant="200" id="W1V-2x-GKg"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PH-hQ-XL8">
+                                <rect key="frame" x="30" y="110" width="260" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đủ mấy thì nhậu?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOq-gG-WH9">
+                                        <rect key="frame" x="10" y="0.0" width="132" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tZB-sa-lJX">
+                                        <rect key="frame" x="0.0" y="31" width="260" height="29"/>
+                                        <segments>
+                                            <segment title="2"/>
+                                            <segment title="3"/>
+                                            <segment title="4"/>
+                                            <segment title="5"/>
+                                            <segment title="6"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="didChangeValue:" destination="HWw-9X-Wj4" eventType="valueChanged" id="49H-sM-Z3E"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tZB-sa-lJX" firstAttribute="leading" secondItem="1PH-hQ-XL8" secondAttribute="leading" id="7Rx-TQ-n0o"/>
+                                    <constraint firstItem="YOq-gG-WH9" firstAttribute="top" secondItem="1PH-hQ-XL8" secondAttribute="top" id="HI6-kV-qr8"/>
+                                    <constraint firstItem="tZB-sa-lJX" firstAttribute="centerY" secondItem="1PH-hQ-XL8" secondAttribute="centerY" constant="15" id="Jh5-nt-dek"/>
+                                    <constraint firstItem="tZB-sa-lJX" firstAttribute="centerX" secondItem="1PH-hQ-XL8" secondAttribute="centerX" id="W21-hE-vKH"/>
+                                    <constraint firstItem="YOq-gG-WH9" firstAttribute="leading" secondItem="1PH-hQ-XL8" secondAttribute="leading" constant="10" id="dmw-TO-cXU"/>
+                                    <constraint firstAttribute="trailing" secondItem="tZB-sa-lJX" secondAttribute="trailing" id="fmq-2i-adJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3Ol-sf-cDn" secondAttribute="bottom" id="FQU-fh-wgC"/>
+                            <constraint firstItem="3Ol-sf-cDn" firstAttribute="leading" secondItem="bkV-Nz-K64" secondAttribute="leading" id="IFc-ng-4vi"/>
+                            <constraint firstItem="njk-rO-orD" firstAttribute="centerX" secondItem="bkV-Nz-K64" secondAttribute="centerX" id="KzW-AT-SHb"/>
+                            <constraint firstItem="1PH-hQ-XL8" firstAttribute="leading" secondItem="bkV-Nz-K64" secondAttribute="leading" constant="30" id="Mb5-ju-eHX"/>
+                            <constraint firstItem="1PH-hQ-XL8" firstAttribute="top" secondItem="njk-rO-orD" secondAttribute="bottom" constant="20" id="Nus-Mm-H1X"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ol-sf-cDn" secondAttribute="trailing" id="Oqm-vK-2uz"/>
+                            <constraint firstItem="M8R-dG-tGc" firstAttribute="centerX" secondItem="bkV-Nz-K64" secondAttribute="centerX" id="Ot5-NX-7gL"/>
+                            <constraint firstItem="QFz-W3-6zx" firstAttribute="centerX" secondItem="bkV-Nz-K64" secondAttribute="centerX" id="Rva-78-wlS"/>
+                            <constraint firstItem="cie-kg-Fs2" firstAttribute="top" secondItem="M8R-dG-tGc" secondAttribute="bottom" constant="30" id="Ypg-M6-UNk"/>
+                            <constraint firstItem="QFz-W3-6zx" firstAttribute="top" secondItem="njk-rO-orD" secondAttribute="bottom" constant="20" id="bna-UD-LJF"/>
+                            <constraint firstItem="bkV-Nz-K64" firstAttribute="trailing" secondItem="cie-kg-Fs2" secondAttribute="trailing" constant="20" id="cT2-lp-Mco"/>
+                            <constraint firstItem="bkV-Nz-K64" firstAttribute="trailing" secondItem="QFz-W3-6zx" secondAttribute="trailing" constant="30" id="d6R-8M-Suu"/>
+                            <constraint firstItem="M8R-dG-tGc" firstAttribute="top" secondItem="1PH-hQ-XL8" secondAttribute="bottom" constant="20" id="dCc-hV-MU3"/>
+                            <constraint firstItem="3Ol-sf-cDn" firstAttribute="top" secondItem="0Yy-mF-tSQ" secondAttribute="top" id="hFh-E9-6wF"/>
+                            <constraint firstItem="bkV-Nz-K64" firstAttribute="trailing" secondItem="njk-rO-orD" secondAttribute="trailing" constant="30" id="iGo-Le-ncr"/>
+                            <constraint firstItem="QFz-W3-6zx" firstAttribute="top" secondItem="njk-rO-orD" secondAttribute="bottom" constant="20" id="mTm-Fs-ISY"/>
+                            <constraint firstItem="bkV-Nz-K64" firstAttribute="trailing" secondItem="1PH-hQ-XL8" secondAttribute="trailing" constant="30" id="mZP-lQ-vav"/>
+                            <constraint firstItem="M8R-dG-tGc" firstAttribute="top" secondItem="QFz-W3-6zx" secondAttribute="bottom" constant="20" id="msS-Pz-VD2"/>
+                            <constraint firstItem="M8R-dG-tGc" firstAttribute="top" secondItem="QFz-W3-6zx" secondAttribute="bottom" constant="20" id="n8W-Pi-gIX"/>
+                            <constraint firstItem="QFz-W3-6zx" firstAttribute="leading" secondItem="bkV-Nz-K64" secondAttribute="leading" constant="30" id="qyt-ss-tsD"/>
+                            <constraint firstItem="cie-kg-Fs2" firstAttribute="leading" secondItem="bkV-Nz-K64" secondAttribute="leading" constant="20" id="uuW-Zo-bIs"/>
+                            <constraint firstItem="njk-rO-orD" firstAttribute="top" secondItem="bkV-Nz-K64" secondAttribute="top" constant="20" id="x7P-FB-7Qd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bkV-Nz-K64"/>
+                    </view>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="confititiView" destination="3Ol-sf-cDn" id="r01-dy-I21"/>
+                        <outlet property="countLabel" destination="QFz-W3-6zx" id="hoh-zX-Uwe"/>
+                        <outlet property="drinkButton" destination="cie-kg-Fs2" id="0DF-HR-SYd"/>
+                        <outlet property="imageView" destination="M8R-dG-tGc" id="3Ts-da-eAI"/>
+                        <outlet property="textField" destination="njk-rO-orD" id="fgy-JW-f4P"/>
+                        <outlet property="voteConditionSetView" destination="1PH-hQ-XL8" id="Bwy-OQ-vXW"/>
+                        <outlet property="voteMaxControl" destination="tZB-sa-lJX" id="qkh-FM-VTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpZ-Om-vSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="132"/>
+        </scene>
+        <!--Menu Collection View Controller-->
+        <scene sceneID="07I-e4-yuU">
+            <objects>
+                <collectionViewController storyboardIdentifier="MenuCollectionViewController" id="W07-Ty-dl2" customClass="MenuCollectionViewController" customModule="DrinkVoteMessageExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gc0-fE-3Bm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="0.0" id="WXf-94-GX1">
+                            <size key="itemSize" width="70" height="70"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Z7f-mI-NdV" customClass="MenuCollectionViewCell" customModule="DrinkVoteMessageExtension" customModuleProvider="target">
+                                <rect key="frame" x="15" y="15" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRT-vn-chM">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="touchUpInside:" destination="Z7f-mI-NdV" eventType="touchUpInside" id="XWt-Gf-VwO"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="uRT-vn-chM" firstAttribute="top" secondItem="Z7f-mI-NdV" secondAttribute="top" id="TFf-QF-8Dg"/>
+                                    <constraint firstAttribute="trailing" secondItem="uRT-vn-chM" secondAttribute="trailing" id="VBl-DR-pm4"/>
+                                    <constraint firstAttribute="bottom" secondItem="uRT-vn-chM" secondAttribute="bottom" id="cfb-fd-0Ds"/>
+                                    <constraint firstItem="uRT-vn-chM" firstAttribute="leading" secondItem="Z7f-mI-NdV" secondAttribute="leading" id="zCi-TQ-R6l"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="button" destination="uRT-vn-chM" id="NT7-6C-bTu"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="W07-Ty-dl2" id="vX2-Aa-q6V"/>
+                            <outlet property="delegate" destination="W07-Ty-dl2" id="XEc-fR-x2r"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4XI-Vh-3C2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beer" width="200" height="200"/>
+    </resources>
+</document>
